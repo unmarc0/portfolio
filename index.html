@@ -2,62 +2,89 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfolio profesional de Marc Olivé Morlà - Desarrollo de aplicaciones y sitios web a medida.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio profesional de Marc Olivé Morlà - Desarrollo de aplicaciones y sitios web a medida." />
+  <meta name="author" content="Marc Olivé Morlà" />
   <title>Marc Olivé Morlà - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <header>
+  <header class="hero" role="banner">
     <div class="container">
       <h1>Marc Olivé Morlà</h1>
-      <p>Desarrollador de Apps y Webs a Medida</p>
-      <nav>
+      <p>Desarrollador de Aplicaciones y Sitios Web a Medida</p>
+      <nav aria-label="Navegación principal">
         <a href="#proyectos">Proyectos</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#contacto">Contacto</a>
-        <a href="https://github.com/unmarc0" target="_blank">GitHub</a>
+        <a href="https://github.com/unmarc0" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="proyectos" class="seccion">
-      <h2>Proyectos</h2>
+    <section id="proyectos" class="seccion fade-in" tabindex="-1" aria-labelledby="proyectos-title">
+      <h2 id="proyectos-title">Proyectos</h2>
       <div class="grid-proyectos">
-        <div class="proyecto">
+        <article class="card" tabindex="0">
           <h3>Business Data</h3>
-          <p>App web para análisis de empresas españolas con filtros, gráficas y descarga en PDF.</p>
-          <a href="https://github.com/unmarc0" target="_blank">Ver en GitHub</a>
-        </div>
-        <div class="proyecto">
+          <p>App para análisis de empresas españolas con filtros, gráficas y exportación en PDF.</p>
+          <a href="https://github.com/unmarc0/Business_Data" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Business Data en GitHub">Ver en GitHub</a>
+        </article>
+        <article class="card" tabindex="0">
           <h3>Sound Marcloud</h3>
-          <p>App de escritorio para descargar y reproducir música desde YouTube.</p>
-          <a href="https://github.com/unmarc0" target="_blank">Ver en GitHub</a>
-        </div>
+          <p>Aplicación de escritorio para descargar y reproducir música desde YouTube.</p>
+          <a href="https://github.com/unmarc0/Sound_Loud" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Sound Marcloud en GitHub">Ver en GitHub</a>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Cook it AI</h3>
+          <p>Aplicación móvil para tener recetas a mano.</p>
+          <a href="https://github.com/unmarc0/CookItAI" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Cook it AI en GitHub">Ver en GitHub</a>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Fonari</h3>
+          <p>Web para comprar hondas hechas a mano.</p>
+          <a href="https://github.com/unmarc0/Fonari" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Fonari en GitHub">Ver en GitHub</a>
+        </article>
+                <article class="card" tabindex="0">
+          <h3>BirdFly</h3>
+          <p>Juego casual en memoria de Flappy Bird.</p>
+          <a href="https://github.com/unmarc0/Game_BirdFly" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto BirdFly en GitHub">Ver en GitHub</a>
+        </article>
       </div>
     </section>
 
-    <section id="sobre-mi" class="seccion">
-      <h2>Sobre mí</h2>
-      <p>Soy Marc Olivé Morlà, desarrollador de aplicaciones multiplataforma y webs a medida. Me especializo en crear soluciones funcionales, limpias y eficientes adaptadas a cada necesidad.</p>
-      <p>Trabajo con tecnologías como ASP.NET, Kotlin, SQL, Python y herramientas de IA. Siempre busco evolucionar y construir con propósito.</p>
+    <section id="sobre-mi" class="seccion fade-in" tabindex="-1" aria-labelledby="sobre-mi-title">
+      <h2 id="sobre-mi-title">Sobre mí</h2>
+      <p>
+        Soy desarrollador de aplicaciones multiplataforma con enfoque en rendimiento, usabilidad y eficiencia. Me adapto a distintos sectores creando soluciones con propósito.
+      </p>
+      <p>Trabajo con ASP.NET, Kotlin, Python, SQL y herramientas de inteligencia artificial.</p>
     </section>
 
-    <section id="contacto" class="seccion">
-      <h2>Contacto</h2>
-      <form action="https://formsubmit.co/marcolivedev@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo" required>
-        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+    <section id="contacto" class="seccion fade-in" tabindex="-1" aria-labelledby="contacto-title">
+      <h2 id="contacto-title">Contacto</h2>
+      <form action="https://formsubmit.co/marcolivedev@gmail.com" method="POST" aria-label="Formulario de contacto">
+        <input type="text" name="name" placeholder="Tu nombre" required aria-required="true" />
+        <input type="email" name="email" placeholder="Tu correo" required aria-required="true" />
+        <textarea name="message" placeholder="Tu mensaje" required aria-required="true" rows="5"></textarea>
         <button type="submit">Enviar mensaje</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 Marc Olivé Morlà</p>
   </footer>
 
