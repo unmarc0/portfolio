@@ -2,85 +2,65 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marc Olivé Morlà | Desarrollador</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://kit.fontawesome.com/a2e0f3da4a.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio profesional de Marc Olivé Morlà - Desarrollo de aplicaciones y sitios web a medida.">
+  <title>Marc Olivé Morlà - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <div class="container">
       <h1>Marc Olivé Morlà</h1>
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <section class="hero" data-aos="fade-up">
-      <h2>Desarrollador de Apps y Webs a Medida</h2>
-      <p>Soluciones digitales reales para problemas concretos.</p>
-      <a href="#proyectos" class="btn">Ver proyectos</a>
-    </section>
+      <p>Desarrollador de Apps y Webs a Medida</p>
+      <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://github.com/unmarc0" target="_blank">GitHub</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="sobre-mi" class="section" data-aos="fade-up">
-      <h2>Sobre mí</h2>
-      <p>Soy Marc Olivé Morlà, desarrollador de aplicaciones multiplataforma y páginas web a medida. Me enfoco en resolver necesidades concretas, adaptándome a todo tipo de sectores y clientes.</p>
-      <div class="tech">
-        <span>Kotlin</span><span>Jetpack Compose</span><span>ASP.NET</span>
-        <span>SQL Server</span><span>JavaScript</span><span>Bootstrap</span>
-        <span>Python</span><span>Django</span><span>Leaflet</span>
-      </div>
-    </section>
-
-    <section id="proyectos" class="section proyectos" data-aos="fade-up">
+    <section id="proyectos" class="seccion">
       <h2>Proyectos</h2>
-
-      <div class="proyecto">
-        <h3>📊 Business Data</h3>
-        <p>Aplicación web para consultar y analizar datos de empresas españolas. Filtros avanzados, gráficos interactivos y descarga en PDF.</p>
-        <a href="https://github.com/tuusuario/business-data" target="_blank">Ver en GitHub</a>
-      </div>
-
-      <div class="proyecto">
-        <h3>🎮 Pixel Climb</h3>
-        <p>Juego vertical endless runner con estética pixel minimalista y mecánicas adictivas con progresión.</p>
-        <a href="https://github.com/tuusuario/pixel-climb" target="_blank">Ver en GitHub</a>
-      </div>
-
-      <div class="proyecto">
-        <h3>🎵 Sound Marcloud</h3>
-        <p>App de escritorio para buscar, descargar y reproducir música desde YouTube. Hecha en Python y Tkinter.</p>
-        <a href="https://github.com/tuusuario/sound-marcloud" target="_blank">Ver en GitHub</a>
-      </div>
-
-      <div class="proyecto">
-        <h3>🌍 DescubriMontevideo</h3>
-        <p>Portal interactivo con mapas Leaflet y gráficos ApexCharts para visualizar datos turísticos de Montevideo.</p>
-        <a href="https://github.com/tuusuario/descubrimontevideo" target="_blank">Ver en GitHub</a>
+      <div class="grid-proyectos">
+        <div class="proyecto">
+          <h3>Business Data</h3>
+          <p>App web para análisis de empresas españolas con filtros, gráficas y descarga en PDF.</p>
+          <a href="https://github.com/unmarc0" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="proyecto">
+          <h3>Sound Marcloud</h3>
+          <p>App de escritorio para descargar y reproducir música desde YouTube.</p>
+          <a href="https://github.com/unmarc0" target="_blank">Ver en GitHub</a>
+        </div>
       </div>
     </section>
 
-    <section id="contacto" class="section" data-aos="fade-up">
+    <section id="sobre-mi" class="seccion">
+      <h2>Sobre mí</h2>
+      <p>Soy Marc Olivé Morlà, desarrollador de aplicaciones multiplataforma y webs a medida. Me especializo en crear soluciones funcionales, limpias y eficientes adaptadas a cada necesidad.</p>
+      <p>Trabajo con tecnologías como ASP.NET, Kotlin, SQL, Python y herramientas de IA. Siempre busco evolucionar y construir con propósito.</p>
+    </section>
+
+    <section id="contacto" class="seccion">
       <h2>Contacto</h2>
-      <p>¿Tienes una idea o proyecto? Escríbeme:</p>
-      <form action="https://formsubmit.co/tuemail@example.com" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <form action="https://formsubmit.co/marcolivedev@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
         <input type="email" name="email" placeholder="Tu correo" required>
-        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Marc Olivé Morlà — <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+    <p>&copy; 2025 Marc Olivé Morlà</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
