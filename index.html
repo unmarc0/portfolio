@@ -5,89 +5,367 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio profesional de Marc Olivé Morlà - Desarrollo de aplicaciones y sitios web a medida." />
   <meta name="author" content="Marc Olivé Morlà" />
+  <meta name="keywords" content="desarrollador, portfolio, aplicaciones, web, ASP.NET, Kotlin, Python" />
   <title>Marc Olivé Morlà - Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
-
+  
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- ScrollReveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <header class="hero" role="banner">
-    <div class="container">
-      <h1>Marc Olivé Morlà</h1>
-      <p>Desarrollador de Aplicaciones y Sitios Web a Medida</p>
-      <nav aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-        <a href="https://github.com/unmarc0" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Marc Olivé</a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-  </header>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="gradient-text">Marc Olivé Morlà</span>
+          </h1>
+          <p class="hero-subtitle">Desarrollador Full Stack</p>
+          <p class="hero-description">
+            Creando aplicaciones y sitios web innovadores con tecnologías modernas
+          </p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/unmarc0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:marcolivedev@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/marcolive" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="floating-card">
+            <div class="card-content">
+              <i class="fas fa-code"></i>
+              <span>Desarrollador</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
 
   <main>
-    <section id="proyectos" class="seccion fade-in" tabindex="-1" aria-labelledby="proyectos-title">
-      <h2 id="proyectos-title">Proyectos</h2>
-      <div class="grid-proyectos">
-        <article class="card" tabindex="0">
-          <h3>Business Data</h3>
-          <p>App para análisis de empresas españolas con filtros, gráficas y exportación en PDF.</p>
-          <a href="https://github.com/unmarc0/Business_Data" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Business Data en GitHub">Ver en GitHub</a>
-        </article>
-        <article class="card" tabindex="0">
-          <h3>Sound Loud</h3>
-          <p>Aplicación de escritorio para descargar y reproducir música desde YouTube.</p>
-          <a href="https://github.com/unmarc0/Sound_Loud" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Sound Loud en GitHub">Ver en GitHub</a>
-        </article>
-        <article class="card" tabindex="0">
-          <h3>Cook it AI</h3>
-          <p>Aplicación móvil para tener recetas a mano.</p>
-          <a href="https://github.com/unmarc0/CookItAI" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Cook it AI en GitHub">Ver en GitHub</a>
-        </article>
-        <article class="card" tabindex="0">
-          <h3>Fonari</h3>
-          <p>Web para comprar hondas hechas a mano.</p>
-          <a href="https://github.com/unmarc0/Fonari" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Fonari en GitHub">Ver en GitHub</a>
-        </article>
-                <article class="card" tabindex="0">
-          <h3>BirdFly</h3>
-          <p>Juego casual en memoria de Flappy Bird.</p>
-          <a href="https://github.com/unmarc0/Game_BirdFly" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto BirdFly en GitHub">Ver en GitHub</a>
-        </article>
+    <!-- About Section -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              Soy un desarrollador de aplicaciones multiplataforma apasionado por crear soluciones 
+              innovadoras que combinan rendimiento, usabilidad y eficiencia. Me especializo en 
+              adaptarme a diferentes sectores y necesidades, desarrollando aplicaciones con propósito 
+              y valor real.
+            </p>
+            <p class="about-description">
+              Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre 
+              buscando las mejores prácticas y tecnologías más actuales para entregar productos 
+              de alta calidad.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Proyectos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Años</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Dedicación</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="sobre-mi" class="seccion fade-in" tabindex="-1" aria-labelledby="sobre-mi-title">
-      <h2 id="sobre-mi-title">Sobre mí</h2>
-      <p>
-        Soy desarrollador de aplicaciones multiplataforma con enfoque en rendimiento, usabilidad y eficiencia. Me adapto a distintos sectores creando soluciones con propósito.
-      </p>
-      <p>Trabajo con ASP.NET, Kotlin, Python, SQL y herramientas de inteligencia artificial.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <h3>ASP.NET</h3>
+            <p>Desarrollo de aplicaciones web robustas y escalables</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <h3>Kotlin</h3>
+            <p>Aplicaciones móviles nativas para Android</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <p>Automatización, análisis de datos e IA</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL</h3>
+            <p>Gestión y optimización de bases de datos</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>IA</h3>
+            <p>Integración de inteligencia artificial</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Desarrollo frontend y backend moderno</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contacto" class="seccion fade-in" tabindex="-1" aria-labelledby="contacto-title">
-      <h2 id="contacto-title">Contacto</h2>
-      <form action="https://formsubmit.co/marcolivedev@gmail.com" method="POST" aria-label="Formulario de contacto">
-        <input type="text" name="name" placeholder="Tu nombre" required aria-required="true" />
-        <input type="email" name="email" placeholder="Tu correo" required aria-required="true" />
-        <textarea name="message" placeholder="Tu mensaje" required aria-required="true" rows="5"></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
+    <!-- Projects Section -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/unmarc0/Business_Data" target="_blank" rel="noopener noreferrer" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Business Data</h3>
+              <p>Aplicación completa para análisis de empresas españolas con sistema de filtros avanzados, visualización de datos mediante gráficas interactivas y exportación profesional en PDF.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">PDF</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/unmarc0/Sound_Loud" target="_blank" rel="noopener noreferrer" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sound Loud</h3>
+              <p>Aplicación de escritorio multiplataforma para descargar y reproducir música desde YouTube con interfaz intuitiva y gestión de bibliotecas musicales.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Desktop</span>
+                <span class="tech-tag">YouTube API</span>
+                <span class="tech-tag">Audio</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/unmarc0/CookItAI" target="_blank" rel="noopener noreferrer" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Cook it AI</h3>
+              <p>Aplicación móvil inteligente que utiliza IA para sugerir recetas personalizadas basadas en ingredientes disponibles y preferencias del usuario.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Mobile</span>
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Kotlin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/unmarc0/Fonari" target="_blank" rel="noopener noreferrer" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Fonari</h3>
+              <p>Plataforma e-commerce especializada en la venta de hondas artesanales hechas a mano, con sistema de pedidos y gestión de inventario.</p>
+              <div class="project-tech">
+                <span class="tech-tag">E-commerce</span>
+                <span class="tech-tag">Web</span>
+                <span class="tech-tag">ASP.NET</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/unmarc0/Game_BirdFly" target="_blank" rel="noopener noreferrer" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>BirdFly</h3>
+              <p>Juego casual inspirado en Flappy Bird con mecánicas mejoradas, sistema de puntuaciones y efectos visuales modernos.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Game</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Canvas</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>¡Hablemos!</h3>
+            <p>¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas y ayudarte a hacerlas realidad.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <span>marcolivedev@gmail.com</span>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-github"></i>
+                <span>github.com/unmarc0</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" action="https://formsubmit.co/marcolivedev@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://unmarc0.github.io/portfolio">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Asunto" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i>
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer role="contentinfo">
-    <p>&copy; 2025 Marc Olivé Morlà</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Marc Olivé Morlà. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/unmarc0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:marcolivedev@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://linkedin.com/in/marcolive" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
